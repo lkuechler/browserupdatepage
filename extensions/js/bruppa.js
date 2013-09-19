@@ -1,0 +1,3 @@
+if (navigator.userAgent.match(/MSIE (\d+\.\d+);/) && RegExp.$1 <= 7 || navigator.userAgent.match(/Chrome\/(\d+)./) && /Mobile/i.test(navigator.userAgent) && RegExp.$1 <= 20 || navigator.userAgent.match(/Firefox.(\d+\.\d+)/) && RegExp.$1 <= 18){var e = document.getElementsByName("browserUpdate")[0].content;RegExp("\b" + e + "\b").test(window.location.href) || (window.location.href = e)}
+// This Filter will remove <=ie v7, <=Chrome v20 and <=Firefox v 18
+// To generate the Filter-Code you can use
